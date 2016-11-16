@@ -92,6 +92,10 @@ public class StackLayoutView extends ViewGroup {
         }
         setMeasuredDimension(width, height);
     }
+    private void enableScroll(float y) {
+        prevY = y;
+        isDown = true;
+    }
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -105,8 +109,7 @@ public class StackLayoutView extends ViewGroup {
                     }
                 }
                 if(!isDown && !touchOnElement) {
-                    prevY = event.getY();
-                    isDown = true;
+                    enableScroll(event.getY());
                 }
                 else if(touchOnElement) {
                     //touchedElement.handleTouch(event);
@@ -123,6 +126,9 @@ public class StackLayoutView extends ViewGroup {
 
                             }
                         },touchedElement,this,width);
+                    }
+                    else {
+                        enableScroll(event.getY());
                     }
                 }
                 break;
