@@ -133,7 +133,7 @@ public class StackLayoutView extends ViewGroup {
                 }
                 break;
             case MotionEvent.ACTION_MOVE:
-                if(isDown && Math.abs(event.getY() - prevY) >= height / 20) {
+                if(isDown && Math.abs(event.getY() - prevY) >= height / 20 && elements.size()>0) {
                     if (event.getY() > prevY) {
                         currentIndex++;
                         currentIndex %= elements.size();
