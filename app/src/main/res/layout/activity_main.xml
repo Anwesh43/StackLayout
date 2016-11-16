@@ -4,21 +4,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.anwesome.games.stacklayout.MainActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/popper_icon_256" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/popper_icon_256" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/popper_icon_256" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/popper_icon_256" />
+    
 </com.anwesome.games.stacklayoutview.StackLayoutView>
