@@ -46,8 +46,8 @@ public class StackLayoutView extends ViewGroup {
                 element.layout((int) element.getLeftOfElement(), top, (int) element.getLeftOfElement() + (3 * width) / 4, top + 3 * height / 4);
                 element.setTopOfElement(top);
                 element.setDisplayedHeight(gap);
-                element.setScaleX(1+0.01f*(index-currentIndex));
-                element.setScaleY(1+0.1f*(index-currentIndex));
+                element.setScaleX(1+0.02f*(index-currentIndex));
+                element.setScaleY(1+0.02f*(index-currentIndex));
                 //element.setElevation(elevation);
                 //element.setTranslationZ(elevation);
                 top += gap;
